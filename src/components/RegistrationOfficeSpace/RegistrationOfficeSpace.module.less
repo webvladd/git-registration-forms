@@ -1,0 +1,44 @@
+@import '../../_varibales.less';
+.officeSpace {
+  :global {
+    .ant-radio-group {
+      max-width: 430px;
+      width: 100%;
+      background-color: @periwinkle-crayola;
+      border-radius: 5px;
+      display: flex;
+      justify-content: space-between;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      padding-left: 23px;
+      padding-right: 64px;
+    }
+
+    .ant-radio-wrapper {
+      font-size: 21px;
+    }
+
+    .ant-radio-inner {
+      width: 30px;
+      height: 30px;
+    }
+
+    .ant-radio {
+      margin-right: 11px;
+    }
+
+    .ant-radio-inner::after {
+      width: 18px;
+      height: 18px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: @deciduous-green-craiola;
+    }
+
+    .ant-radio-checked .ant-radio-inner,
+    .ant-radio:hover .ant-radio-inner {
+      border-color: @light-gray;
+    }
+  }
+}
